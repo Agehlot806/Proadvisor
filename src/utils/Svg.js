@@ -10,6 +10,10 @@ import EditIcon from '../Assets/svg/EditIcon.svg'
 import SearchIcon from '../Assets/svg/SearchIcon.svg'
 import WhatsappIcon from '../Assets/svg/whatsappIcon.svg'
 import PhoneIcon from '../Assets/svg/phoneIcon.svg'
+import SplashLogo from '../Assets/svg/SplashLogo.svg';
+import SplashLoader from '../Assets/svg/SplashLoader.svg';
+import LoginUncle from '../Assets/svg/LoginUncle.svg';
+import Star from '../Assets/svg/Star.svg';
 
 export {
     MenuIcon,
@@ -23,5 +27,6 @@ export {
     EditIcon,
     SearchIcon,
     PhoneIcon,
-    WhatsappIcon
+    WhatsappIcon,
+    SplashLogo, SplashLoader, LoginUncle, Star
 }

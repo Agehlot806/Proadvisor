@@ -6,4 +6,8 @@ export const images =  {
     property3: require('../Assets/image/property3.png'),
     property4: require('../Assets/image/property4.png'),
     propertyDetail: require('../Assets/image/propertyDetail.png'),
+    SplashBackground: require('../Assets/image/SplashBackground.jpg'),
+    GetStartBackground: require('../Assets/image/GetStartBackground.jpg'),
+    LoginBackground: require('../Assets/image/LoginBackground.jpg'),
+    BookYourHomeBackground: require('../Assets/image/BookYourHomeBackground.jpg'),
 }
