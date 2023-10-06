@@ -15,12 +15,12 @@ import {
 import {COLOR} from '../../utils/Colors';
 import {LoginUncle} from '../../utils/Svg';
 
-const Login = ({navigation}) => {
-  const loginHandilor = () => {
-    navigation.navigate('LoginOTP');
+const SignUp = ({navigation}) => {
+  const registerHandilor = () => {
+    navigation.navigate('SignUpOTP');
   };
-  const signUpHandilor = () => {
-    navigation.navigate('SignUp');
+  const alreadyHaveHandilor = () => {
+    navigation.navigate('Login');
   };
   return (
     <View style={styles.loginContainer}>
@@ -30,9 +30,21 @@ const Login = ({navigation}) => {
           <View style={styles.uncleImage}>
             <LoginUncle height={hp('25%')} width={wp('30%')} />
           </View>
-          <Text style={styles.loginHeaderText}>Log In Now</Text>
+          <Text style={styles.loginHeaderText}>Register Now</Text>
           <Text style={styles.getStartText}>Get let's try our property.</Text>
           <Text style={[styles.textInputTitle, {alignSelf: 'flex-start'}]}>
+            Enter Name
+          </Text>
+          <TextInput
+            style={styles.textInput}
+            placeholder="Samara Simah reddy"
+            placeholderTextColor="white"
+          />
+          <Text
+            style={[
+              styles.textInputTitle,
+              {alignSelf: 'flex-start', marginTop: hp('1.5%')},
+            ]}>
             Phone Number
           </Text>
           <TextInput
@@ -46,21 +58,21 @@ const Login = ({navigation}) => {
           <TouchableOpacity
             style={styles.loginButton}
             onPress={() => {
-              loginHandilor();
+              registerHandilor();
             }}>
-            <Text style={styles.loginButtonText}>Log In</Text>
+            <Text style={styles.loginButtonText}>Register</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={{flexDirection: 'row'}}
             onPress={() => {
-              signUpHandilor();
+              alreadyHaveHandilor();
             }}>
             <Text
               style={[styles.dontHaveAccountText, {marginRight: hp('0.5%')}]}>
-              You don’t have any account ?
+              Already have an account?
             </Text>
             <Text style={[styles.dontHaveAccountText, {color: '#FFFFFF'}]}>
-              Create Account
+              Log in
             </Text>
           </TouchableOpacity>
         </View>
@@ -69,7 +81,7 @@ const Login = ({navigation}) => {
   );
 };
 
-export default Login;
+export default SignUp;
 
 const styles = StyleSheet.create({
   loginContainer: {
@@ -89,7 +101,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   loginHeaderText: {
-    fontSize: hp('3.5%'),
+    fontSize: hp('3.2%'),
     fontWeight: 'bold',
     color: COLOR.WHITE,
     alignSelf: 'flex-start',
@@ -99,7 +111,7 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start',
     marginBottom: hp('6.5%'),
     fontSize: hp('2%'),
-    marginBottom: hp('6%'),
+    marginBottom: hp('4.5%'),
   },
   phoneContainer: {
     width: wp('90%'),
@@ -139,6 +151,6 @@ const styles = StyleSheet.create({
   uncleImage: {
     position: 'absolute',
     right: hp('3%'),
-    bottom: hp('7.5%'),
+    bottom: hp('16%'),
   },
 });
