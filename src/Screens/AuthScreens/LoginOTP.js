@@ -78,7 +78,7 @@ const LoginOTP = ({navigation}) => {
         <TouchableOpacity
           style={styles.verifyButton}
           onPress={() => {
-            navigation.navigate('BookYourHome');
+            navigation.navigate('Home');
           }}>
           <Text style={styles.verifyButtonText}>Verify all</Text>
         </TouchableOpacity>

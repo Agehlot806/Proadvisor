@@ -28,8 +28,10 @@ const styles = StyleSheet.create({
   },
   // Content
   contentWrappr: {
-    marginVertical: hp('5%'),
+    marginTop: hp('5%'),
     marginHorizontal: hp('2%'),
+    flexDirection: 'row',
+    justifyContent: 'space-between'
   },
   propertyTitleTxt: {
     color: COLOR.WHITE,
@@ -83,6 +85,17 @@ const styles = StyleSheet.create({
   cotentTxt: {
     color: COLOR.WHITE,
     fontSize: hp('2%')
+  },
+  verifiedView: {
+    backgroundColor: 'green',
+    marginTop: hp('2%'),
+    marginHorizontal: hp('2%')
+  },
+  ratingImg: {
+    width: wp('20%'),
+    height: wp('8%'),
+    resizeMode: 'cover',
+    alignSelf: 'flex-end'
   }
 });
 

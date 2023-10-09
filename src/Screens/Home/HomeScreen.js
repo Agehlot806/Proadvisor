@@ -237,7 +237,7 @@ const Home = ({navigation}) => {
           <FlatList
           data={[1,2,3,4]}
           renderItem={({item}) => (
-            <TouchableOpacity style={styles.propertyBox}>
+            <TouchableOpacity style={styles.propertyBox} onPress={() => navigation.navigate('propertyDetail')}>
             <View style={{width: '33%'}}>
               <Image source={images.property1} style={styles.propertyBoxImg} />
             </View>

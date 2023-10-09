@@ -10,4 +10,5 @@ export const images =  {
     GetStartBackground: require('../Assets/image/GetStartBackground.jpg'),
     LoginBackground: require('../Assets/image/LoginBackground.jpg'),
     BookYourHomeBackground: require('../Assets/image/BookYourHomeBackground.jpg'),
+    rating: require('../Assets/image/rating.png'),
 }

@@ -53,7 +53,7 @@ const BookYourHome = ({navigation}) => {
           <TouchableOpacity
             style={styles.continueButton}
             onPress={() => {
-              navigation.navigate('Login');
+              navigation.navigate('Home');
             }}>
             <Text style={styles.continueButtonText}>Continue</Text>
           </TouchableOpacity>
